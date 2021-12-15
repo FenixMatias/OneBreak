@@ -1,0 +1,287 @@
+namespace OnBreak.Presentation
+{
+    /// <summary>
+    /// Lógica de interacción para AdmiCientes.xaml
+    /// </summary>
+    public partial class AdmiClientes : Window
+    {
+        List<Cliente> _clientes = new List<Cliente>();
+
+        public AdmiClientes()
+        {
+            InitializeComponent();
+            Cliente client = new Cliente();
+            _clientes = client.GetClients();
+            cboactividad.ItemsSource = Enum.GetValues(typeof(CompanyActivity));
+            cboactividad.SelectedItem = CompanyActivity.Agropecuaria;
+            cbotipo.ItemsSource = Enum.GetValues(typeof(CompanyType));
+            cbotipo.SelectedItem = CompanyType.SPA;
+            cboactividad.Items.Refresh();
+        }
+
+        private void Btnagregar_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Cliente client = new Cliente()
+                {
+                    RutCliente = txtrut.Text,
+                    RazonSocial = txtrazon.Text,
+                    NombreContacto = txtnombre.Text,
+                    MailContacto = txtmail.Text,
+                    Direccion = txtdireccion.Text,
+                    Telefono = txttelefono.Text,
+                    IdActividadEmpresa = (int)(CompanyActivity)cboactividad.SelectedItem,
+                    IdTipoEmpresa = (int)(CompanyType)cbotipo.SelectedItem
+                };
+
+                if (ValidarCampos())
+                {
+                    MessageBox.Show("Los Campos no Pueden Estar Vacios X(", "Campos Vacios", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
+
+                if (client.Create())
+                {
+                    MessageBox.Show("Cliente Creado Satisfactoriamente :)", "Crear", MessageBoxButton.OK, MessageBoxImage.Information);
+                    RefreshItems();
+                    ClearForm();
+                }
+                else
+                {
+                    MessageBox.Show("No se Pudo Crear al Cliente :(", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+            catch (FormatException ex)
+            {
+                MessageBox.Show("No se Pudo Crear al Cliente :(" + ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error X(", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void RefreshItems()
+        {
+            Cliente client = new Cliente();
+            _clientes = client.GetClients();
+            dgdcliente.ItemsSource = _clientes;
+            dgdcliente.Items.Refresh();
+        }
+
+        private void Btnlimpiar_Click(object sender, RoutedEventArgs e)
+        {
+            ClearForm();
+        }
+
+        private void ClearForm()
+        {
+            txtrut.Text = "";
+            txtrazon.Text = "";
+            txtnombre.Text = "";
+            txtmail.Text = "";
+            txtdireccion.Text = "";
+            txttelefono.Text = "";
+            cboactividad.SelectedItem = cboactividad.SelectedIndex = 0;
+            cbotipo.SelectedItem = cbotipo.SelectedIndex = 0;
+        }
+
+        private bool ValidarCampos()
+        {
+            if (txtrut.Text == "" ||
+            txtrazon.Text == "" ||
+            txtnombre.Text == "" ||
+            txtmail.Text == "" ||
+            txtdireccion.Text == "" ||
+            txttelefono.Text == "")
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        private void Btnbuscar_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Cliente client = new Cliente() { RutCliente = txtrut.Text };
+                if (client.Read())
+                {
+                    List<Cliente> _clientesrut = new List<Cliente>();
+                    _clientesrut = client.GetClients();
+                    List<Cliente> listacliente = new List<Cliente>();
+                    for (int i = 0; i < _clientesrut.Count; i++)
+                    {
+                        if (txtrut.Text == _clientesrut[i].RutCliente)
+                        {
+                            listacliente.Add(_clientesrut[i]);
+                        }
+                        txtrazon.Text = client.RazonSocial;
+                        txtnombre.Text = client.NombreContacto;
+                        txtmail.Text = client.MailContacto;
+                        txtdireccion.Text = client.Direccion;
+                        txttelefono.Text = client.Telefono;
+                        cboactividad.SelectedItem = (CompanyActivity)client.IdActividadEmpresa;
+                        cbotipo.SelectedItem = (CompanyType)client.IdTipoEmpresa;
+                    }
+                    dgdcliente.ItemsSource = listacliente;
+                    dgdcliente.Items.Refresh();
+
+                    MessageBox.Show("Cliente Encontrado Satisfactoriamente :)", "Buscar", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+                else
+                {
+                    MessageBox.Show("No se Pudo Encontrar al Cliente :(", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+
+            }
+            catch (FormatException ex)
+            {
+                MessageBox.Show("Busque un Rut Valido por Favor: " + ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error X(", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void Dgdcliente_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            int index = dgdcliente.SelectedIndex;
+            if (index != -1)
+            {
+                Cliente client = _clientes[index];
+                txtrut.Text = client.RutCliente;
+                txtrazon.Text = client.RazonSocial;
+                txtnombre.Text = client.NombreContacto;
+                txtmail.Text = client.MailContacto;
+                txtdireccion.Text = client.Direccion;
+                txttelefono.Text = client.Telefono;
+                cboactividad.SelectedItem = (CompanyActivity)client.IdActividadEmpresa;
+                cbotipo.SelectedItem = (CompanyType)client.IdTipoEmpresa;
+            }
+        }
+
+        private void Btnactualizar_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Cliente client = new Cliente()
+                {
+                    RutCliente = txtrut.Text,
+                    RazonSocial = txtrazon.Text,
+                    NombreContacto = txtnombre.Text,
+                    MailContacto = txtmail.Text,
+                    Direccion = txtdireccion.Text,
+                    Telefono = txttelefono.Text,
+                    IdActividadEmpresa = (int)(CompanyActivity)cboactividad.SelectedItem,
+                    IdTipoEmpresa = (int)(CompanyType)cbotipo.SelectedItem
+                };
+
+                if (ValidarCampos())
+                {
+                    MessageBox.Show("Los Campos no Pueden Estar Vacios X(", "Campos Vacios", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
+
+                if (client.Update())
+                {
+                    MessageBox.Show("Cliente Actualizado Satisfactoriamente :)", "Actualizar", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                    RefreshItems();
+                    ClearForm();
+                }
+                else
+                {
+                    MessageBox.Show("Cliente no Actualizado :(", "Error", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                }
+            }
+            catch (FormatException ex)
+            {
+                MessageBox.Show("Cliente no Actualizado" + ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error X(" + ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void Btneliminar_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Cliente client = new Cliente() { RutCliente = txtrut.Text };
+                MessageBoxResult result = MessageBox.Show("¿Desea Eliminar al Cliente Definitivamente?", "Eliminar Cliente", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (result == MessageBoxResult.No)
+                {
+                    return;
+                }
+
+                Contrato contract = new Contrato();
+                List<Contrato> _contracts = contract.GetContracts();
+                bool contratos = false;
+                for (int i = 0; i < _contracts.Count; i++)
+                {
+                    if (_contracts[i].RutCliente == txtrut.Text)
+                    {
+                        contratos = true;
+                    }
+                }
+                if (contratos)
+                {
+                    MessageBox.Show("Cliente no se Puede Eliminar, Tiene un Contrato con Nuestra Empresa ;)", "Eliminar Cliente", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+                else
+
+                if (client.Delete())
+                {
+                    MessageBox.Show("Cliente Eliminado Satisfactoriamente ;)", "Eliminado", MessageBoxButton.OK, MessageBoxImage.Information);
+                    RefreshItems();
+                    ClearForm();
+                }
+                else
+                {
+                    MessageBox.Show("No se Pudo Eliminar al Cliente :(", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+
+            }
+            catch (FormatException ex)
+            {
+                MessageBox.Show("No se Pudo Eliminar al Cliente" + ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error X(", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void Btnlistar_Click(object sender, RoutedEventArgs e)
+        {
+            Cliente client = new Cliente();
+            _clientes = client.GetClients();
+            dgdcliente.ItemsSource = _clientes;
+            dgdcliente.Items.Refresh();
+        }
+
+        private void Btnacceder_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Seleccione el Cliente en el DataGrid que Desea Traer ;)", "Traer Cliente", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+            ListClientes listclient = new ListClientes();
+            listclient.Show();
+            this.Close();
+        }
+        
+        private void Btnvolver_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainwindow = new MainWindow();
+            mainwindow.Show();
+            Close();
+        }
+    }
+}

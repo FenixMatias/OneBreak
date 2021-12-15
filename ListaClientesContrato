@@ -1,0 +1,30 @@
+namespace OnBreak.Presentation
+{
+    /// <summary>
+    /// Lógica de interacción para ListaClientesContrato.xaml
+    /// </summary>
+    public partial class ListaClientesContrato : Window
+    {
+        List<Cliente> _clients = new List<Cliente>();
+
+        public ListaClientesContrato()
+        {
+            InitializeComponent();
+            Cliente client = new Cliente();
+            _clients = client.GetClients();
+            dgdlistacliente.ItemsSource = _clients;
+            dgdlistacliente.Items.Refresh();
+        }
+        private void Dgdlistacliente_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            int index = dgdlistacliente.SelectedIndex;
+            if (index != -1)
+            {
+                AdmiContrato admicontrato = new AdmiContrato();
+                admicontrato.txtrut.Text = _clients[index].RutCliente;
+                admicontrato.Show();
+                this.Close();
+            }
+        }
+    }
+}

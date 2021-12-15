@@ -1,0 +1,398 @@
+namespace OnBreak.Presentation
+{
+    /// <summary>
+    /// Lógica de interacción para AdmiContrato.xaml
+    /// </summary>
+    public partial class AdmiContrato : Window
+    {
+        List<ModalidadServicio> modalityservice = new List<ModalidadServicio>();
+        List<Contrato> _contratos = new List<Contrato>();
+        List<string> nombreservicio = new List<string>();
+
+        public AdmiContrato()
+        {
+            InitializeComponent();
+            Contrato contract = new Contrato();
+            _contratos = contract.GetContracts();
+            dtpcreacion.SelectedDate = DateTime.Now;
+            dtptermino.SelectedDate = DateTime.Now;
+            ModalidadServicio modalidadservicio = new ModalidadServicio();
+            modalityservice = modalidadservicio.GetModalityService();
+            foreach (ModalidadServicio servis in modalityservice)
+            {
+                nombreservicio.Add(servis.Nombre);
+            }
+            cbomodalidad.ItemsSource = nombreservicio;
+            cbomodalidad.SelectedIndex = 0;
+            cboevento.ItemsSource = Enum.GetValues(typeof(EventType));
+            cboevento.SelectedItem = EventType.CoffeBreak;
+            txtnumecont.Text = NumeroContrato();
+            chkrealizado.IsChecked = false;
+            Horas();
+            MinutosSegundos();
+            cbohhinicio.SelectedIndex = 0;
+            cbohhtermino.SelectedIndex = 0;
+            cbomminicio.SelectedIndex = 0;
+            cbossinicio.SelectedIndex = 0;
+            cbommtermino.SelectedIndex = 0;
+            cbosstermino.SelectedIndex = 0;
+        }
+
+        private void Horas()
+        {
+            int x = 23;
+            for (int i = 0; i <= x; i++)
+            {
+                if (i <= 9)
+                {
+                    cbohhinicio.Items.Add("0" + i);
+                    cbohhtermino.Items.Add("0" + i);
+                }
+                else
+                {
+                    cbohhinicio.Items.Add(i);
+                    cbohhtermino.Items.Add(i);
+                }
+            }
+        }
+
+        private void MinutosSegundos()
+        {
+            int x = 59;
+            for (int i = 0; i <= x; i++)
+            {
+                if (i <= 9)
+                {
+                    cbomminicio.Items.Add("0" + i);
+                    cbossinicio.Items.Add("0" + i);
+                    cbommtermino.Items.Add("0" + i);
+                    cbosstermino.Items.Add("0" + i);
+                }
+                else
+                {
+                    cbomminicio.Items.Add(i);
+                    cbossinicio.Items.Add(i);
+                    cbommtermino.Items.Add(i);
+                    cbosstermino.Items.Add(i);
+                }
+            }
+        }
+
+        private void Btnlistaclie_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Seleccione el Cliente en el DataGrid que Desea Traer ;)", "Traer Cliente", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+            ListaClientesContrato listaclientescontrato = new ListaClientesContrato();
+            listaclientescontrato.Show();
+            this.Close();
+        }
+
+        private void RefreshItems()
+        {
+            Contrato contract = new Contrato();
+            _contratos = contract.GetContracts();
+            dgdcontrato.ItemsSource = _contratos;
+            dgdcontrato.Items.Refresh();
+        }
+
+        private void ClearForm()
+        {
+            txtnumecont.Text = "";
+            txtrut.Text = "";
+            cbomodalidad.SelectedItem = cbomodalidad.SelectedIndex = 0;
+            dtpcreacion.SelectedDate = DateTime.Now;
+            dtptermino.SelectedDate = DateTime.Now;
+            txtasistente.Text = "";
+            txtpersonal.Text = "";
+            cbomodalidad.SelectedItem = cbomodalidad.SelectedIndex = 0;
+            cboevento.SelectedItem = cboevento.SelectedIndex = 0;
+            txtvalor.Text = "";
+            txtobservaciones.Text = "";
+        }
+
+        private void Btnlimpiar_Click(object sender, RoutedEventArgs e)
+        {
+            ClearForm();
+        }
+
+        private bool ValidarCampos()
+        {
+            if (txtrut.Text == "" ||
+            txtasistente.Text == "" ||
+            txtpersonal.Text == "" ||
+            txtobservaciones.Text == "" ||
+            txtvalor.Text == "")
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        
+        private string NumeroContrato()
+        {
+            string id = DateTime.Now.ToString("yyyyMMddhhm");
+            return id;
+        }
+        
+        private void Btnagregar_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                if (ValidarCampos())
+                {
+                    MessageBox.Show("Los Campos no Pueden Estar Vacios X(", "Campos Vacios", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
+
+                Contrato contract = new Contrato()
+                {
+                    Numero = NumeroContrato(),
+                    Creacion = new DateTime(dtpcreacion.SelectedDate.Value.Year, dtpcreacion.SelectedDate.Value.Month, dtpcreacion.SelectedDate.Value.Day, int.Parse(cbohhinicio.SelectedItem.ToString()), int.Parse(cbomminicio.SelectedItem.ToString()), int.Parse(cbossinicio.SelectedItem.ToString())),
+                    Termino = new DateTime(dtptermino.SelectedDate.Value.Year, dtptermino.SelectedDate.Value.Month, dtptermino.SelectedDate.Value.Day, int.Parse(cbohhtermino.SelectedItem.ToString()), int.Parse(cbommtermino.SelectedItem.ToString()), int.Parse(cbosstermino.SelectedItem.ToString())),
+                    RutCliente = txtrut.Text,
+                    IdModalidad = modalityservice[cbomodalidad.SelectedIndex].IdModalidad,
+                    IdTipoEvento = (int)(EventType)cboevento.SelectedItem,
+                    FechaHoraInicio = new DateTime(dtpcreacion.SelectedDate.Value.Year, dtpcreacion.SelectedDate.Value.Month, dtpcreacion.SelectedDate.Value.Day, int.Parse(cbohhinicio.SelectedItem.ToString()), int.Parse(cbomminicio.SelectedItem.ToString()), int.Parse(cbossinicio.SelectedItem.ToString())),
+                    FechaHoraTermino = new DateTime(dtptermino.SelectedDate.Value.Year, dtptermino.SelectedDate.Value.Month, dtptermino.SelectedDate.Value.Day, int.Parse(cbohhtermino.SelectedItem.ToString()), int.Parse(cbommtermino.SelectedItem.ToString()), int.Parse(cbosstermino.SelectedItem.ToString())),
+                    Asistentes = int.Parse(txtasistente.Text),
+                    PersonalAdicional = int.Parse(txtpersonal.Text),
+                    Realizado = (bool)chkrealizado.IsChecked,
+                    ValorTotalContrato = double.Parse(txtvalor.Text),
+                    Observaciones = txtobservaciones.Text,
+                };
+                if (contract.Create())
+                {
+                    MessageBox.Show("Contrato Creado Satisfactoriamente :)", "Crear", MessageBoxButton.OK, MessageBoxImage.Information);
+                    RefreshItems();
+                    ClearForm();
+                }
+                else
+                {
+                    MessageBox.Show("No se Pudo Crear el Contrato :(", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+
+            }
+            catch (FormatException ex)
+            {
+                MessageBox.Show("No se Pudo Crear el Contrato :(" + ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error X(", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void Btnbuscar_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Contrato contrato = new Contrato() { Numero = txtnumecont.Text };
+                if (contrato.Read())
+                {
+                    List<Contrato> _contratonumero = new List<Contrato>();
+                    _contratonumero = contrato.GetContracts();
+                    List<Contrato> listacontrato = new List<Contrato>();
+                    for (int i = 0; i < _contratonumero.Count; i++)
+                    {
+                        if (txtnumecont.Text == _contratonumero[i].Numero)
+                        {
+                            listacontrato.Add(_contratonumero[i]);
+                        }
+                    }
+                    txtnumecont.Text = contrato.Numero;
+                    txtrut.Text = contrato.RutCliente;
+                    dtpcreacion.SelectedDate = contrato.FechaHoraInicio;
+                    cbohhinicio.SelectedItem = contrato.FechaHoraInicio.Hour;
+                    cbomminicio.SelectedItem = contrato.FechaHoraInicio.Minute;
+                    cbossinicio.SelectedItem = contrato.FechaHoraInicio.Second;
+                    dtptermino.SelectedDate = contrato.FechaHoraTermino;
+                    cbohhtermino.SelectedItem = contrato.FechaHoraInicio.Hour;
+                    cbommtermino.SelectedItem = contrato.FechaHoraInicio.Minute;
+                    cbosstermino.SelectedItem = contrato.FechaHoraInicio.Second;
+                    modalityservice[cbomodalidad.SelectedIndex].Nombre = contrato.IdModalidad;
+                    cboevento.SelectedItem = (EventType)contrato.IdTipoEvento;
+                    txtasistente.Text = contrato.Asistentes.ToString();
+                    txtpersonal.Text = contrato.PersonalAdicional.ToString();
+                    txtobservaciones.Text = contrato.Observaciones;
+                    txtvalor.Text = contrato.ValorTotalContrato.ToString();
+                    chkrealizado.IsChecked = contrato.Realizado;
+                    dtpcreacion.SelectedDate = contrato.Creacion;
+                    cbohhinicio.SelectedItem = contrato.Creacion.Hour;
+                    cbomminicio.SelectedItem = contrato.Creacion.Minute;
+                    cbossinicio.SelectedItem = contrato.Creacion.Second;
+                    dtptermino.SelectedDate = contrato.Termino;
+                    cbohhtermino.SelectedItem = contrato.Termino.Hour;
+                    cbommtermino.SelectedItem = contrato.Termino.Minute;
+                    cbosstermino.SelectedItem = contrato.Termino.Second;
+                    dgdcontrato.ItemsSource = listacontrato;
+                    dgdcontrato.Items.Refresh();
+
+                    MessageBox.Show("Contrato Encontrado Satisfactoriamente :)", "Buscar", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+                else
+                {
+                    MessageBox.Show("No se Pudo Encontrar el Contrato :(", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+
+            }
+            catch (FormatException ex)
+            {
+                MessageBox.Show("Busque un Contrato Valido por Favor: " + ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void Dgdcontrato_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            int index = dgdcontrato.SelectedIndex;
+            if (index != -1)
+            {
+                Contrato contract = _contratos[index];
+                txtnumecont.Text = contract.Numero;
+                txtrut.Text = contract.RutCliente;
+                dtpcreacion.SelectedDate = contract.FechaHoraInicio;
+                cbohhinicio.SelectedItem = contract.FechaHoraInicio.Hour;
+                cbomminicio.SelectedItem = contract.FechaHoraInicio.Minute;
+                cbossinicio.SelectedItem = contract.FechaHoraInicio.Second;
+                dtptermino.SelectedDate = contract.FechaHoraTermino;
+                cbohhtermino.SelectedItem = contract.FechaHoraInicio.Hour;
+                cbommtermino.SelectedItem = contract.FechaHoraInicio.Minute;
+                cbosstermino.SelectedItem = contract.FechaHoraInicio.Second;
+                modalityservice[cbomodalidad.SelectedIndex].Nombre = contract.IdModalidad;
+                cboevento.SelectedItem = (EventType)contract.IdTipoEvento;
+                txtasistente.Text = contract.Asistentes.ToString();
+                txtpersonal.Text = contract.PersonalAdicional.ToString();
+                txtobservaciones.Text = contract.Observaciones;
+                txtvalor.Text = contract.ValorTotalContrato.ToString();
+                chkrealizado.IsChecked = contract.Realizado;
+                dtpcreacion.SelectedDate = contract.Creacion;
+                cbohhinicio.SelectedItem = contract.Creacion.Hour;
+                cbomminicio.SelectedItem = contract.Creacion.Minute;
+                cbossinicio.SelectedItem = contract.Creacion.Second;
+                dtptermino.SelectedDate = contract.Termino;
+                cbohhtermino.SelectedItem = contract.Termino.Hour;
+                cbommtermino.SelectedItem = contract.Termino.Minute;
+                cbosstermino.SelectedItem = contract.Termino.Second;
+            }
+        }
+
+        private void Calculo()
+        {
+            double recargopersonal = 0;
+            List<ModalidadServicio> _services = new List<ModalidadServicio>();
+            ModalidadServicio service = new ModalidadServicio();
+            _services = service.GetModalityService();
+            foreach (ModalidadServicio modaserv in service.GetModalityService())
+            {
+                _services.Add(modaserv);
+            }
+
+            for (int i = 0; i < _services.Count; i++)
+            {
+                if (cbomodalidad.SelectedItem == _services[i].Nombre)
+                {
+                    recargopersonal = _services[i].ValorBase;
+                }
+            }
+
+            Contrato contract = new Contrato()
+            {
+                Asistentes = int.Parse(txtasistente.Text),
+                PersonalAdicional = int.Parse(txtpersonal.Text)
+            };
+            txtvalor.Text = (contract.ValorAsitente() + contract.ValorPersonal() + recargopersonal).ToString();
+        }
+
+        private void Btncalculo_Click(object sender, RoutedEventArgs e)
+        {
+            Calculo();
+        }
+        
+        private void Btnlistar_Click(object sender, RoutedEventArgs e)
+        {
+            Contrato contract = new Contrato();
+            _contratos = contract.GetContracts();
+            dgdcontrato.ItemsSource = _contratos;
+            dgdcontrato.Items.Refresh();
+        }
+
+        private void Txbnombre_LostFocus(object sender, RoutedEventArgs e)
+        {
+            Cliente client = new Cliente();
+            List<Cliente> _clients = client.GetClients();
+            foreach (Cliente clientes in _clients)
+            {
+                if (clientes.RutCliente == txtrut.Text)
+                {
+                    txbnombre.Text = client.RazonSocial;
+                }
+            }
+        }
+
+        private void Txtrut_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            List<Cliente> _client = new List<Cliente>();
+            Cliente clientes = new Cliente();
+            _client = clientes.GetClients();
+
+            for (int i = 0; i < _client.Count; i++)
+            {
+                if (txtrut.Text == _client[i].RutCliente)
+                {
+                    txbnombre.Text = _client[i].NombreContacto;
+                }
+            }
+        }
+        
+        private void Btnvolver_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainwindow = new MainWindow();
+            mainwindow.Show();
+            Close();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string Numero;
+            DateTime Creacion;
+            DateTime Termino;
+            string RutCliente;
+            string IdModalidad;
+            int IdTipoEvento;
+            DateTime FechaHoraInicio;
+            DateTime FechaHoraTermino;
+            int Asistentes;
+            int PersonalAdicional;
+            bool Realizado;
+            double ValorTotalContrato;
+            string Observaciones;
+            
+            RutCliente = txtrut.Text;
+            IdModalidad = modalityservice[cbomodalidad.SelectedIndex].IdModalidad;
+            IdTipoEvento = (int)(EventType)cboevento.SelectedItem;
+            FechaHoraInicio = new DateTime(dtpcreacion.SelectedDate.Value.Year, dtpcreacion.SelectedDate.Value.Month, dtpcreacion.SelectedDate.Value.Day, int.Parse(cbohhinicio.SelectedItem.ToString()), int.Parse(cbomminicio.SelectedItem.ToString()), int.Parse(cbossinicio.SelectedItem.ToString()));
+            FechaHoraTermino = new DateTime(dtptermino.SelectedDate.Value.Year, dtptermino.SelectedDate.Value.Month, dtptermino.SelectedDate.Value.Day, int.Parse(cbohhtermino.SelectedItem.ToString()), int.Parse(cbommtermino.SelectedItem.ToString()), int.Parse(cbosstermino.SelectedItem.ToString()));
+            Asistentes = int.Parse(txtasistente.Text);
+            PersonalAdicional = int.Parse(txtpersonal.Text);
+            Realizado = (bool)chkrealizado.IsChecked;
+            ValorTotalContrato = double.Parse(txtvalor.Text);
+            Observaciones = txtobservaciones.Text;
+            Numero = NumeroContrato();
+            Creacion = new DateTime(dtpcreacion.SelectedDate.Value.Year, dtpcreacion.SelectedDate.Value.Month, dtpcreacion.SelectedDate.Value.Day, int.Parse(cbohhinicio.SelectedItem.ToString()), int.Parse(cbomminicio.SelectedItem.ToString()), int.Parse(cbossinicio.SelectedItem.ToString()));
+            Termino = new DateTime(dtptermino.SelectedDate.Value.Year, dtptermino.SelectedDate.Value.Month, dtptermino.SelectedDate.Value.Day, int.Parse(cbohhtermino.SelectedItem.ToString()), int.Parse(cbommtermino.SelectedItem.ToString()), int.Parse(cbosstermino.SelectedItem.ToString()));
+
+            MessageBox.Show(RutCliente + " " + " " + IdModalidad + " " + " " + IdTipoEvento + " " + FechaHoraInicio + " " + " " + FechaHoraTermino + " " + " " + PersonalAdicional
+            + " " + " " + Realizado + " " + " " + ValorTotalContrato + " " + " " + Observaciones + " " + " " + Numero + " " + " " + Creacion + " " + " " +
+                            Termino);
+        }
+
+        
+    }
+}

@@ -1,0 +1,231 @@
+namespace OnBreak.Presentation
+{
+    /// <summary>
+    /// Lógica de interacción para ListClientes.xaml
+    /// </summary>
+    public partial class ListClientes : Window
+    {   
+        
+        List<Cliente> _clients = new List<Cliente>();
+
+        public ListClientes()
+        {
+            InitializeComponent();
+            Cliente client = new Cliente();
+            _clients = client.GetClients();
+            dgdcliente.ItemsSource = _clients;
+            dgdcliente.Items.Refresh();
+            cboactividad.ItemsSource = Enum.GetValues(typeof(CompanyActivity));
+            cboactividad.SelectedIndex = 0;
+            cboempresa.ItemsSource = Enum.GetValues(typeof(CompanyType));
+            cboempresa.SelectedIndex = 0;
+            txtrut.Visibility = Visibility.Hidden;
+            btnbuscarrut.Visibility = Visibility.Hidden;
+            btnbuscaractividad.Visibility = Visibility.Hidden;
+            cboactividad.Visibility = Visibility.Hidden;
+            btnbuscaractividad.Visibility = Visibility.Hidden;
+            cboempresa.Visibility = Visibility.Hidden;
+            btnbuscarempresa.Visibility = Visibility.Hidden;
+        }
+        
+        private void Rdrut_Checked(object sender, RoutedEventArgs e)
+        {
+            txtrut.Visibility = Visibility.Visible;
+            btnbuscarrut.Visibility = Visibility.Visible;
+            cboactividad.Visibility = Visibility.Hidden;
+            btnbuscaractividad.Visibility = Visibility.Hidden;
+            cboempresa.Visibility = Visibility.Hidden;
+            btnbuscarempresa.Visibility = Visibility.Hidden;
+        }
+
+        private bool ValidarCampos()
+        {
+            if (txtrut.Text == "")
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        private void ClearForm()
+        {
+            txtrut.Text = "";
+            cboactividad.SelectedItem = cboactividad.SelectedIndex = 0;
+            cboempresa.SelectedItem = cboempresa.SelectedIndex = 0;
+        }
+
+        private void Btnbuscarrut_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                if (ValidarCampos())
+                {
+                    MessageBox.Show("Los Campos no Pueden Estar Vacios X(", "Campos Vacios", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
+
+                Cliente cliente = new Cliente() { RutCliente = txtrut.Text };
+                if (cliente.Read())
+                {
+                    List<Cliente> _clientesrut = new List<Cliente>();
+                    _clientesrut = cliente.GetClients();
+                    List<Cliente> listacliente = new List<Cliente>();
+                    for (int i = 0; i < _clientesrut.Count; i++)
+                    {
+                        if (txtrut.Text == _clientesrut[i].RutCliente)
+                        {
+                            listacliente.Add(_clientesrut[i]);
+                        }
+                    }
+                    dgdcliente.ItemsSource = listacliente;
+                    dgdcliente.Items.Refresh();
+
+                    MessageBox.Show("Rut Filtrado Satisfactoriamente :)", "Filtrar", MessageBoxButton.OK, MessageBoxImage.Information);
+                    ClearForm();
+                }
+                else
+                {
+                    MessageBox.Show("No se Pudo Encontrar al Cliente :(", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+            catch (FormatException ex)
+            {
+                MessageBox.Show("No se Pudo Encontrar al Cliente: " + ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void Rdactividad_Checked(object sender, RoutedEventArgs e)
+        {
+            cboactividad.Visibility = Visibility.Visible;
+            btnbuscaractividad.Visibility = Visibility.Visible;
+            txtrut.Visibility = Visibility.Hidden;
+            btnbuscarrut.Visibility = Visibility.Hidden;
+            cboempresa.Visibility = Visibility.Hidden;
+            btnbuscarempresa.Visibility = Visibility.Hidden;
+        }
+
+        private void Btnbuscaractividad_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Cliente cliente = new Cliente() { IdActividadEmpresa = (int)cboactividad.SelectedItem };
+                if (cliente.Read2())
+                {
+                    List<Cliente> _clientesactividad = new List<Cliente>();
+                    _clientesactividad = cliente.GetClientsActivity((int)cboactividad.SelectedItem);
+                    dgdcliente.ItemsSource = _clientesactividad;
+                    dgdcliente.Items.Refresh();
+
+                    MessageBox.Show("Actividad Filtrada Satisfactoriamente :)", "Filtrar", MessageBoxButton.OK, MessageBoxImage.Information);
+                    ClearForm();
+
+                    int index = dgdcliente.SelectedIndex;
+                    if (index != -1)
+                    {
+                        AdmiClientes admiclientes = new AdmiClientes();
+                        admiclientes.txtrut.Text = _clients[index].RutCliente;
+                        admiclientes.txtrazon.Text = _clients[index].RazonSocial;
+                        admiclientes.txtnombre.Text = _clients[index].NombreContacto;
+                        admiclientes.txtmail.Text = _clients[index].MailContacto;
+                        admiclientes.txtdireccion.Text = _clients[index].Direccion;
+                        admiclientes.txttelefono.Text = _clients[index].Telefono;
+                        admiclientes.cboactividad.SelectedItem = (CompanyActivity)_clients[index].IdActividadEmpresa;
+                        admiclientes.cbotipo.SelectedItem = (CompanyType)_clients[index].IdTipoEmpresa;
+                        admiclientes.Show();
+                        this.Close();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("No se Pudo Encontrar al Cliente :(", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+                
+            }
+            catch (FormatException ex)
+            {
+                MessageBox.Show("No se Pudo Encontrar al Cliente: " + ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void Rdempresa_Checked(object sender, RoutedEventArgs e)
+        {
+            cboempresa.Visibility = Visibility.Visible;
+            btnbuscarempresa.Visibility = Visibility.Visible;
+            txtrut.Visibility = Visibility.Hidden;
+            btnbuscarrut.Visibility = Visibility.Hidden;
+            cboactividad.Visibility = Visibility.Hidden;
+            btnbuscaractividad.Visibility = Visibility.Hidden;
+        }
+
+        private void Btnbuscarempresa_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Cliente cliente = new Cliente() { IdTipoEmpresa = (int)cboempresa.SelectedItem };
+                if (cliente.Read3())
+                {
+                    List<Cliente> _clientesempresa = new List<Cliente>();
+                    _clientesempresa = cliente.GetClientsType((int)cboempresa.SelectedItem);
+                    dgdcliente.ItemsSource = _clientesempresa;
+                    dgdcliente.Items.Refresh();
+
+                    MessageBox.Show("Tipo Empresa Filtrada Satisfactoriamente :)", "Filtrar", MessageBoxButton.OK, MessageBoxImage.Information);
+                    ClearForm();
+                }
+                else
+                {
+                    MessageBox.Show("No se Pudo Encontrar al Cliente :(", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+
+            }
+            catch (FormatException ex)
+            {
+                MessageBox.Show("No se Pudo Encontrar al Cliente: " + ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void Dgdcliente_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            int index = dgdcliente.SelectedIndex;
+            if (index != -1)
+            {
+                AdmiClientes admiclientes = new AdmiClientes();
+                admiclientes.txtrut.Text = _clients[index].RutCliente;
+                admiclientes.txtrazon.Text = _clients[index].RazonSocial;
+                admiclientes.txtnombre.Text = _clients[index].NombreContacto;
+                admiclientes.txtmail.Text = _clients[index].MailContacto;
+                admiclientes.txtdireccion.Text = _clients[index].Direccion;
+                admiclientes.txttelefono.Text = _clients[index].Telefono;
+                admiclientes.cboactividad.SelectedItem = (CompanyActivity)_clients[index].IdActividadEmpresa;
+                admiclientes.cbotipo.SelectedItem = (CompanyType)_clients[index].IdTipoEmpresa;
+                admiclientes.Show();
+                this.Close();
+            }
+        }
+        
+        private void Btnvolver_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainwindow = new MainWindow();
+            mainwindow.Show();
+            Close();
+        }
+    }
+}

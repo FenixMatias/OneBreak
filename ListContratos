@@ -1,0 +1,220 @@
+namespace OnBreak.Presentation
+{
+    /// <summary>
+    /// Lógica de interacción para ListContratos.xaml
+    /// </summary>
+    public partial class ListContratos : Window
+    {
+        List<Contrato> _contracts = new List<Contrato>();
+        List<ModalidadServicio> modalityservice = new List<ModalidadServicio>();
+        List<string> nombreservicio = new List<string>();
+
+        public ListContratos()
+        {
+            InitializeComponent();
+            Contrato contract = new Contrato();
+            _contracts = contract.GetContracts();
+            dgdcontrato.ItemsSource = _contracts;
+            dgdcontrato.Items.Refresh();
+            cboevento.ItemsSource = Enum.GetValues(typeof(EventType));
+            cboevento.SelectedIndex = 0;
+            ModalidadServicio modalidadservicio = new ModalidadServicio();
+            modalityservice = modalidadservicio.GetModalityService();
+            foreach (ModalidadServicio servis in modalityservice)
+            {
+                nombreservicio.Add(servis.Nombre);
+            }
+            txtnumero.Visibility = Visibility.Hidden;
+            btnbuscarnumero.Visibility = Visibility.Hidden;
+            txtrut.Visibility = Visibility.Hidden;
+            btnbuscarrut.Visibility = Visibility.Hidden;
+            cboevento.Visibility = Visibility.Hidden;
+            btnbuscarevento.Visibility = Visibility.Hidden;
+            cboempresa.Visibility = Visibility.Hidden;
+            btnbuscarempresa.Visibility = Visibility.Hidden;
+        }
+
+        private bool ValidarCampos()
+        {
+            if (txtnumero.Text == "" && txtrut.Text == "")
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        private void ClearForm()
+        {
+            txtnumero.Text = "";
+            txtrut.Text = "";
+            cboevento.SelectedItem = cboevento.SelectedIndex = 0;
+        }
+
+        private void Rdnumero_Checked(object sender, RoutedEventArgs e)
+        {
+            txtnumero.Visibility = Visibility.Visible;
+            btnbuscarnumero.Visibility = Visibility.Visible;
+            txtrut.Visibility = Visibility.Hidden;
+            btnbuscarrut.Visibility = Visibility.Hidden;
+            cboevento.Visibility = Visibility.Hidden;
+            btnbuscarevento.Visibility = Visibility.Hidden;
+            cboempresa.Visibility = Visibility.Hidden;
+            btnbuscarempresa.Visibility = Visibility.Hidden;
+        }
+
+        private void Btnbuscarnumero_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                if (ValidarCampos())
+                {
+                    MessageBox.Show("Los Campos no Pueden Estar Vacios X(", "Campos Vacios", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
+
+                Contrato contrato = new Contrato() { Numero = txtnumero.Text };
+                if (contrato.Read())
+                {
+                    List<Contrato> _contratonumero= new List<Contrato>();
+                    _contratonumero = contrato.GetContracts();
+                    List<Contrato> listacontrato = new List<Contrato>();
+                    for (int i = 0; i < _contratonumero.Count; i++)
+                    {
+                        if (txtnumero.Text == _contratonumero[i].Numero)
+                        {
+                            listacontrato.Add(_contratonumero[i]);
+                        }
+                    }
+                    dgdcontrato.ItemsSource = listacontrato;
+                    dgdcontrato.Items.Refresh();
+
+                    MessageBox.Show("Numero de Contrato Filtrado Satisfactoriamente :)", "Filtrar", MessageBoxButton.OK, MessageBoxImage.Information);
+                    ClearForm();
+                }
+                else
+                {
+                    MessageBox.Show("No se Pudo Encontrar el Numero de Contrato :(", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+            catch (FormatException ex)
+            {
+                MessageBox.Show("No se Pudo Encontrar el  Numero de Contrato: " + ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void Rdrut_Checked(object sender, RoutedEventArgs e)
+        {
+            txtrut.Visibility = Visibility.Visible;
+            btnbuscarrut.Visibility = Visibility.Visible;
+            txtnumero.Visibility = Visibility.Hidden;
+            btnbuscarnumero.Visibility = Visibility.Hidden;
+            cboevento.Visibility = Visibility.Hidden;
+            btnbuscarevento.Visibility = Visibility.Hidden;
+            cboempresa.Visibility = Visibility.Hidden;
+            btnbuscarempresa.Visibility = Visibility.Hidden;
+        }
+
+        private void Btnbuscarrut_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                if (ValidarCampos())
+                {
+                    MessageBox.Show("Los Campos no Pueden Estar Vacios X(", "Campos Vacios", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
+
+                Contrato contrato = new Contrato() { RutCliente = txtrut.Text };
+                if (contrato.Read2())
+                {
+                    List<Contrato> _rutcliente = new List<Contrato>();
+                    _rutcliente = contrato.GetContracts();
+                    List<Contrato> listacontrato = new List<Contrato>();
+                    for (int i = 0; i < _rutcliente.Count; i++)
+                    {
+                        if (txtrut.Text == _rutcliente[i].RutCliente)
+                        {
+                            listacontrato.Add(_rutcliente[i]);
+                        }
+                    }
+                    dgdcontrato.ItemsSource = listacontrato;
+                    dgdcontrato.Items.Refresh();
+
+                    MessageBox.Show("Rut Filtrado Satisfactoriamente :)", "Filtrar", MessageBoxButton.OK, MessageBoxImage.Information);
+                    ClearForm();
+                }
+                else
+                {
+                    MessageBox.Show("No se Pudo Encontrar el Numero de Contrato :(", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+            catch (FormatException ex)
+            {
+                MessageBox.Show("No se Pudo Encontrar el Numero de Contrato: " + ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void Rdevento_Checked(object sender, RoutedEventArgs e)
+        {
+            cboevento.Visibility = Visibility.Visible;
+            btnbuscarevento.Visibility = Visibility.Visible;
+            txtrut.Visibility = Visibility.Hidden;
+            btnbuscarrut.Visibility = Visibility.Hidden;
+            txtnumero.Visibility = Visibility.Hidden;
+            btnbuscarnumero.Visibility = Visibility.Hidden;
+            cboempresa.Visibility = Visibility.Hidden;
+            btnbuscarempresa.Visibility = Visibility.Hidden;
+        }
+
+        private void Btnbuscarevento_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Contrato contrato = new Contrato() { IdTipoEvento = (int)cboevento.SelectedItem };
+                if (contrato.Read3())
+                {
+                    List<Contrato> _tipoevento = new List<Contrato>();
+                    _tipoevento = contrato.GetContractsTypeEvent((int)cboevento.SelectedItem);
+                    dgdcontrato.ItemsSource = _tipoevento;
+                    dgdcontrato.Items.Refresh();
+
+                    MessageBox.Show("Evento Filtrado Satisfactoriamente :)", "Filtrar", MessageBoxButton.OK, MessageBoxImage.Information);
+                    ClearForm();
+                }
+                else
+                {
+                    MessageBox.Show("No se Pudo Encontrar el Numero de Contrato :(", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+            catch (FormatException ex)
+            {
+                MessageBox.Show("No se Pudo Encontrar el Numero de Contrato: " + ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void Btnvolver_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainwindow = new MainWindow();
+            mainwindow.Show();
+            Close();
+        }
+    }
+}

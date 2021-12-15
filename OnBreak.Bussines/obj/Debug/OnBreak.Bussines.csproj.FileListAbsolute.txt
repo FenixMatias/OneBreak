@@ -1,0 +1,60 @@
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Bussines\bin\Debug\OnBreak.Bussines.dll.config
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Bussines\bin\Debug\OnBreak.Bussines.dll
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Bussines\bin\Debug\OnBreak.Bussines.pdb
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Bussines\bin\Debug\EntityFramework.dll
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Bussines\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Bussines\bin\Debug\OnBreak.Data.dll
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Bussines\bin\Debug\OnBreak.Data.pdb
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Bussines\bin\Debug\OnBreak.Data.dll.config
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Bussines\bin\Debug\EntityFramework.xml
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Bussines\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Bussines\obj\Debug\OnBreak.Bussines.csprojAssemblyReference.cache
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Bussines\obj\Debug\OnBreak.Bussines.csproj.CoreCompileInputs.cache
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Bussines\obj\Debug\OnBreak.Bussines.csproj.CopyComplete
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Bussines\obj\Debug\OnBreak.Bussines.dll
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Bussines\obj\Debug\OnBreak.Bussines.pdb
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Bussines\obj\Debug\OnBreak.Bussines.csprojAssemblyReference.cache
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Bussines\obj\Debug\OnBreak.Bussines.csproj.CoreCompileInputs.cache
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Bussines\obj\Debug\OnBreak.Bussines.dll
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Bussines\obj\Debug\OnBreak.Bussines.pdb
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Bussines\bin\Debug\OnBreak.Bussines.dll.config
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Bussines\bin\Debug\OnBreak.Bussines.dll
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Bussines\bin\Debug\OnBreak.Bussines.pdb
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Bussines\bin\Debug\EntityFramework.dll
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Bussines\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Bussines\bin\Debug\OnBreak.Data.dll
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Bussines\bin\Debug\OnBreak.Data.pdb
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Bussines\bin\Debug\OnBreak.Data.dll.config
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Bussines\bin\Debug\EntityFramework.xml
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Bussines\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Bussines\obj\Debug\OnBreak.Bussines.csproj.CopyComplete
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Bussines\bin\Debug\OnBreak.Bussines.dll.config
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Bussines\bin\Debug\OnBreak.Bussines.dll
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Bussines\bin\Debug\OnBreak.Bussines.pdb
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Bussines\bin\Debug\EntityFramework.dll
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Bussines\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Bussines\bin\Debug\OnBreak.Data.dll
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Bussines\bin\Debug\OnBreak.Data.pdb
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Bussines\bin\Debug\OnBreak.Data.dll.config
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Bussines\bin\Debug\EntityFramework.xml
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Bussines\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Bussines\obj\Debug\OnBreak.Bussines.csprojAssemblyReference.cache
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Bussines\obj\Debug\OnBreak.Bussines.csproj.CoreCompileInputs.cache
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Bussines\obj\Debug\OnBreak.Bussines.csproj.CopyComplete
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Bussines\obj\Debug\OnBreak.Bussines.dll
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Bussines\obj\Debug\OnBreak.Bussines.pdb
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Bussines\bin\Debug\OnBreak.Bussines.dll.config
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Bussines\bin\Debug\OnBreak.Bussines.dll
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Bussines\bin\Debug\OnBreak.Bussines.pdb
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Bussines\bin\Debug\EntityFramework.dll
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Bussines\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Bussines\bin\Debug\OnBreak.Data.dll
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Bussines\bin\Debug\OnBreak.Data.pdb
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Bussines\bin\Debug\OnBreak.Data.dll.config
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Bussines\bin\Debug\EntityFramework.xml
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Bussines\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Bussines\obj\Debug\OnBreak.Bussines.csprojAssemblyReference.cache
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Bussines\obj\Debug\OnBreak.Bussines.csproj.CopyComplete
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Bussines\obj\Debug\OnBreak.Bussines.dll
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Bussines\obj\Debug\OnBreak.Bussines.pdb
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Bussines\obj\Debug\OnBreak.Bussines.csproj.CoreCompileInputs.cache

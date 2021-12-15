@@ -1,0 +1,71 @@
+﻿<Controls:MetroWindow x:Class="OnBreak.Presentation.AdmiContrato"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:Dialog="clr-namespace:MahApps.Metro.Controls.Dialogs;assembly=MahApps.Metro"
+        xmlns:local="clr-namespace:OnBreak.Presentation"
+        xmlns:vm="clr-namespace:OnBreak.ViewModelCliente;assembly=OnBreak.ViewModelCliente"
+        mc:Ignorable="d"
+        Title="Administración de Contratos" Height="652.376" Width="1037.932" Background="NavajoWhite">
+    <Window.Resources>
+        <vm:AmiContratoVM x:Key="AmiContratoVM" />
+        <vm:ClienteVM x:Key="cliente"/>
+    </Window.Resources>
+    <Grid Margin="0,0,7,6">
+        <DataGrid IsReadOnly="True" x:Name="dgdcontrato" HorizontalAlignment="Left" Height="472" Margin="498,28,0,0" VerticalAlignment="Top" Width="496" SelectedIndex="{Binding SelectedIndexContrato, Source={StaticResource AmiContratoVM}}" ItemsSource="{Binding contracts, Source={StaticResource AmiContratoVM}}" />
+        <TextBlock HorizontalAlignment="Left" Margin="28,64,0,0" TextWrapping="Wrap" Text="Rut cliente:" VerticalAlignment="Top" Foreground="#FFFB0808" FontFamily="Showcard Gothic"/>
+        <TextBlock HorizontalAlignment="Left" Margin="27,34,0,0" TextWrapping="Wrap" Text="NUMERO DE CONTRATO:" VerticalAlignment="Top" Foreground="#FFFB0808" FontFamily="Showcard Gothic"/>
+        <TextBox x:Name="txtnumecont" HorizontalAlignment="Left" Height="22" Margin="176,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsUndoEnabled="True" Text="{Binding NumContra, Source={StaticResource AmiContratoVM}}"/>
+        <TextBlock HorizontalAlignment="Left" Margin="26,132,0,0" TextWrapping="Wrap" Text="Fecha creación:" VerticalAlignment="Top" Foreground="#FFFD0C0C" FontFamily="Showcard Gothic"/>
+        <TextBlock HorizontalAlignment="Left" Margin="28,200,0,0" TextWrapping="Wrap" Text="Fecha termino:" VerticalAlignment="Top" FontFamily="Showcard Gothic" Foreground="#FFFF0808"/>
+        <TextBlock HorizontalAlignment="Left" Margin="31,271,0,0" TextWrapping="Wrap" Text="Modalidad:" VerticalAlignment="Top" Foreground="#FFF90404" FontFamily="Showcard Gothic"/>
+        <ComboBox x:Name="cbomodalidad" HorizontalAlignment="Left" Margin="24,300,0,0" VerticalAlignment="Top" Width="123" Text="{Binding Modalidad, Source={StaticResource AmiContratoVM}}" SelectedIndex="{Binding Modalidad, Source={StaticResource AmiContratoVM}}" ItemsSource="{Binding Newmoda, Source={StaticResource AmiContratoVM}}"/>
+        <TextBlock HorizontalAlignment="Left" Margin="186,268,0,0" TextWrapping="Wrap" Text="TIPO EVENTO:" VerticalAlignment="Top" FontFamily="Showcard Gothic" Foreground="#FFF50404"/>
+        <ComboBox x:Name="cboevento" HorizontalAlignment="Left" Margin="187,300,0,0" VerticalAlignment="Top" Width="120" ItemsSource="{Binding Even, Source={StaticResource AmiContratoVM}}" SelectedIndex="{Binding SelectedIndexEven, Source={StaticResource AmiContratoVM}}"/>
+        <TextBlock HorizontalAlignment="Left" Margin="31,340,0,0" TextWrapping="Wrap" Text="ASISTENTES:" VerticalAlignment="Top" Foreground="#FFFB0202" FontFamily="Showcard Gothic"/>
+        <TextBox x:Name="txtasistente" HorizontalAlignment="Left" Height="22" Margin="32,371,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="{Binding Asistentes, Source={StaticResource AmiContratoVM}}"/>
+        <TextBlock HorizontalAlignment="Left" Margin="185,342,0,0" TextWrapping="Wrap" Text="PERSONAL ADICIONAL:" VerticalAlignment="Top" FontFamily="Showcard Gothic" Foreground="#FFFB0808"/>
+        <TextBox x:Name="txtpersonal" HorizontalAlignment="Left" Height="24" Margin="186,370,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="{Binding PerAdicional, Source={StaticResource AmiContratoVM}}"/>
+        <TextBlock HorizontalAlignment="Left" Margin="33,412,0,0" TextWrapping="Wrap" Text="OBSERVACIÓNES:" VerticalAlignment="Top" Foreground="#FFFF0808" FontFamily="Showcard Gothic"/>
+        <TextBox x:Name="txtobservaciones" HorizontalAlignment="Left" Height="40" Margin="37,442,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="349" Text="{Binding Observaciones, Source={StaticResource AmiContratoVM}}"/>
+        <TextBlock HorizontalAlignment="Left" Margin="40,501,0,0" TextWrapping="Wrap" Text="VALOR CONTRATO:" VerticalAlignment="Top" FontFamily="Showcard Gothic" Foreground="#FFF30A0A"/>
+        <TextBox x:Name="txtvalor" HorizontalAlignment="Left" Height="22" Margin="39,527,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" Text="{Binding Valor, Source={StaticResource AmiContratoVM}}"/>
+        <CheckBox x:Name="chkrealizado" Content="evento realizado" HorizontalAlignment="Left" Margin="296,532,0,0" VerticalAlignment="Top" Foreground="#FFF70808" FontFamily="Showc
+                  ard Gothic" Command="{Binding Ischeckcommand, Source={StaticResource AmiContratoVM}}" IsChecked="{Binding IsSelected}"/>
+        <Button x:Name="btncalculo" Content="Calcular" HorizontalAlignment="Left" Margin="192,528,0,0" VerticalAlignment="Top" Width="76" Command="{Binding CalCommand, Source={StaticResource AmiContratoVM}}"/>
+        <Button x:Name="btnagregar" Content="Agregar" HorizontalAlignment="Left" Margin="206,572,0,0" VerticalAlignment="Top" Width="70" Height="22" Command="{Binding AddCommand, Source={StaticResource AmiContratoVM}}"/>
+        <Image HorizontalAlignment="Left" Height="28" Margin="170,568,0,0" VerticalAlignment="Top" Width="30" Source="Imagenes/transparenc_ystal_017.png" RenderTransformOrigin="1.345,0.981"/>
+        <TextBlock HorizontalAlignment="Left" Margin="253,162,0,0" TextWrapping="Wrap" Text=":" VerticalAlignment="Top" Foreground="#FFF90808" FontFamily="Showcard Gothic"/>
+        <TextBlock HorizontalAlignment="Left" Margin="254,232,0,0" TextWrapping="Wrap" Text=":" VerticalAlignment="Top" Foreground="#FFF90808" FontFamily="Showcard Gothic"/>
+        <TextBlock HorizontalAlignment="Left" Margin="200,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FFFD0C0C" FontFamily="Showcard Gothic"><Run Text="Hora INICIO"/><Run Text=":"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="197,201,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FFFD0C0C" FontFamily="Showcard Gothic"><Run Text="Hora  TERMINO"/><Run Text=":"/></TextBlock>
+        <Image HorizontalAlignment="Left" Height="34" Margin="858,571,0,0" VerticalAlignment="Top" Width="36" Source="Imagenes/transparenc_ystal_075.png" RenderTransformOrigin="3.278,0.735"/>
+        <Button x:Name="btnvolver" Content="Volver" HorizontalAlignment="Left" Margin="904,573,0,0" VerticalAlignment="Top" Width="94" Height="24"  RenderTransformOrigin="0.19,0.84" Click="Btnvolver_Click"/>
+        <TextBlock x:Name="txbnombre" HorizontalAlignment="Left" Margin="317,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Showcard Gothic" FontSize="20" Foreground="#FFFD0A0A"/>
+        <Image HorizontalAlignment="Left" Height="29" Margin="44,568,0,0" VerticalAlignment="Top" Width="30" Source="Imagenes/transparenc_ystal_127.png" RenderTransformOrigin="0.627,0.274"/>
+        <Button x:Name="btnlimpiar" Content="Limpiar" HorizontalAlignment="Left" Margin="80,573,0,0" VerticalAlignment="Top" Width="70" Height="21" Command="{Binding Clear, Source={StaticResource AmiContratoVM}}" />
+        <Image HorizontalAlignment="Left" Height="35" Margin="330,29,0,0" VerticalAlignment="Top" Width="34" Source="Imagenes/transparenc_ystal_132.png"/>
+        <TextBox x:Name="txtHora" HorizontalAlignment="Left" Height="23" Margin="206,159,0,0" TextWrapping="Wrap" Text="{Binding IniHour, Source={StaticResource AmiContratoVM}}" VerticalAlignment="Top" Width="42"/>
+        <TextBox x:Name="txtminuto" HorizontalAlignment="Left" Height="23" Margin="262,160,0,0" TextWrapping="Wrap" Text="{Binding Iniminute, Source={StaticResource AmiContratoVM}}" VerticalAlignment="Top" Width="42" RenderTransformOrigin="2.429,0.783"/>
+        <TextBox x:Name="txthorafin" HorizontalAlignment="Left" Height="23" Margin="206,228,0,0" TextWrapping="Wrap" Text="{Binding TerHour, Source={StaticResource AmiContratoVM}}" VerticalAlignment="Top" Width="42" RenderTransformOrigin="2.429,0.783"/>
+        <TextBox x:Name="txtminutofin" HorizontalAlignment="Left" Height="23" Margin="263,228,0,0" TextWrapping="Wrap" Text="{Binding Terminute, Source={StaticResource AmiContratoVM}}" VerticalAlignment="Top" Width="42" RenderTransformOrigin="2.429,0.783"/>
+        <Button Content="Generar N° Contrato" HorizontalAlignment="Left" Margin="429,519,0,0" VerticalAlignment="Top" Width="143" Height="35" Command="{Binding IniDate, Source={StaticResource AmiContratoVM}}"/>
+        <TextBlock HorizontalAlignment="Left" Margin="309,165,0,0" TextWrapping="Wrap" Text=":" VerticalAlignment="Top" Foreground="#FFF90808" FontFamily="Showcard Gothic"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="318,160,0,0" TextWrapping="Wrap" Text="{Binding IniSegundo, Source={StaticResource AmiContratoVM}}" VerticalAlignment="Top" Width="42"/>
+        <DatePicker HorizontalAlignment="Left" Margin="26,159,0,0" VerticalAlignment="Top" SelectedDate="{Binding InicioFecha, Source={StaticResource AmiContratoVM}}"/>
+        <DatePicker HorizontalAlignment="Left" Margin="26,227,0,0" VerticalAlignment="Top" Width="156" SelectedDate="{Binding Terminofecha, Source={StaticResource AmiContratoVM}}"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="322,228,0,0" TextWrapping="Wrap" Text="{Binding TerSegundo, Source={StaticResource AmiContratoVM}}" VerticalAlignment="Top" Width="42"/>
+        <TextBlock HorizontalAlignment="Left" Margin="310,232,0,0" TextWrapping="Wrap" Text=":" VerticalAlignment="Top" Foreground="#FFF90808" FontFamily="Showcard Gothic"/>
+        <ComboBox x:Name="cbomodalidad_Copy" HorizontalAlignment="Left" Margin="24,92,0,0" VerticalAlignment="Top" Width="123" Text="{Binding Rut, Source={StaticResource AmiContratoVM}}" ItemsSource="{Binding clientrt, Source={StaticResource AmiContratoVM}}"/>
+        <Button Content="Actualizar" HorizontalAlignment="Left" Margin="343,570,0,0" VerticalAlignment="Top" Width="75" Command="{Binding Update, Source={StaticResource AmiContratoVM}}"/>
+        <Image HorizontalAlignment="Left" Height="30" Margin="296,568,0,0" VerticalAlignment="Top" Width="42" Source="Imagenes/transparenc_ystal_137.png" RenderTransformOrigin="-0.167,0.4"/>
+        <TextBox x:Name="txtalert" HorizontalAlignment="Left" Height="23" Margin="339,34,0,0" TextWrapping="Wrap" Text="{Binding Alert, Source={StaticResource AmiContratoVM}}" VerticalAlignment="Top" Width="120" Visibility="Hidden" TextChanged="TextBox_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="300,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FFF70808" FontFamily="Showcard Gothic" FontSize="10" RenderTransformOrigin="0.208,0.417"><Run Text="Busqueda por "/><Run Text="NUmero de Contrato"/></TextBlock>
+        <Button x:Name="btnbuscar" Content="Buscar" HorizontalAlignment="Left" Margin="368,34,0,0" VerticalAlignment="Top" Width="76" Command="{Binding ReadNumConCommand, Source={StaticResource AmiContratoVM}}"/>
+        <Image HorizontalAlignment="Left" Height="28" Margin="432,570,0,0" VerticalAlignment="Top" Width="38" Source="Imagenes/transparenc_ystal_240.png" RenderTransformOrigin="0.474,0.083"/>
+        <Button x:Name="btneliminar" Content="Terminar" HorizontalAlignment="Left" Margin="474,570,0,0" VerticalAlignment="Top" Width="76" Command="{Binding TerNumConCommand, Source={StaticResource AmiContratoVM}}"/>
+
+    </Grid>
+</Controls:MetroWindow>

@@ -1,0 +1,176 @@
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.Presentation.exe.config
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.Presentation.exe
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.Presentation.pdb
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Presentation\obj\Debug\OnBreak.Presentation.csprojAssemblyReference.cache
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Presentation\obj\Debug\MainWindow.g.cs
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Presentation\obj\Debug\App.g.cs
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Presentation\obj\Debug\OnBreak.Presentation_MarkupCompile.cache
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Presentation\obj\Debug\OnBreak.Presentation_MarkupCompile.lref
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Presentation\obj\Debug\MainWindow.baml
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Presentation\obj\Debug\OnBreak.Presentation.g.resources
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Presentation\obj\Debug\OnBreak.Presentation.Properties.Resources.resources
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Presentation\obj\Debug\OnBreak.Presentation.csproj.GenerateResource.cache
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Presentation\obj\Debug\OnBreak.Presentation.csproj.CoreCompileInputs.cache
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Presentation\obj\Debug\OnBreak.Presentation.exe
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Presentation\obj\Debug\OnBreak.Presentation.pdb
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Presentation\bin\Debug\EntityFramework.dll
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Presentation\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Presentation\bin\Debug\EntityFramework.xml
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Presentation\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Presentation\obj\Debug\OnBreak.Presentation.csproj.CopyComplete
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.Bussines.dll
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.Data.dll
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.Bussines.pdb
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.Bussines.dll.config
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.Data.pdb
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.Data.dll.config
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Presentation\obj\Debug\ListClientes.g.cs
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Presentation\obj\Debug\ListClientes.baml
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Presentation\obj\Debug\AdmiClientes.g.cs
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Presentation\obj\Debug\AdmiContrato.g.cs
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Presentation\obj\Debug\AdmiClientes.baml
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Presentation\obj\Debug\AdmiContrato.baml
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Presentation\obj\Debug\ListContratos.g.cs
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Presentation\obj\Debug\ListContratos.baml
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.ViewModelCliente.dll
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.ViewModelCliente.pdb
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.ViewModelCliente.dll.config
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Presentation\bin\Debug\ControlzEx.dll
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Presentation\bin\Debug\MahApps.Metro.dll
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Presentation\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Presentation\bin\Debug\ControlzEx.pdb
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Presentation\bin\Debug\MahApps.Metro.pdb
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Presentation\bin\Debug\MahApps.Metro.xml
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.Presentation\obj\Debug\App.baml
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.Presentation.exe.config
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.Presentation.exe
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.Presentation.pdb
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Presentation\bin\Debug\ControlzEx.dll
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Presentation\bin\Debug\EntityFramework.dll
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Presentation\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Presentation\bin\Debug\MahApps.Metro.dll
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.ViewModelCliente.dll
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Presentation\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.Bussines.dll
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.Data.dll
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.ViewModelCliente.pdb
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.ViewModelCliente.dll.config
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Presentation\bin\Debug\ControlzEx.pdb
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Presentation\bin\Debug\EntityFramework.xml
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Presentation\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Presentation\bin\Debug\MahApps.Metro.pdb
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Presentation\bin\Debug\MahApps.Metro.xml
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.Bussines.pdb
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.Bussines.dll.config
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.Data.pdb
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.Data.dll.config
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Presentation\obj\Debug\OnBreak.Presentation.csprojAssemblyReference.cache
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Presentation\obj\Debug\AdmiClientes.g.cs
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Presentation\obj\Debug\AdmiContrato.g.cs
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Presentation\obj\Debug\ListClientes.g.cs
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Presentation\obj\Debug\ListContratos.g.cs
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Presentation\obj\Debug\MainWindow.g.cs
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Presentation\obj\Debug\App.g.cs
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Presentation\obj\Debug\OnBreak.Presentation_MarkupCompile.cache
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Presentation\obj\Debug\OnBreak.Presentation_MarkupCompile.lref
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Presentation\obj\Debug\App.baml
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Presentation\obj\Debug\AdmiClientes.baml
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Presentation\obj\Debug\AdmiContrato.baml
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Presentation\obj\Debug\ListClientes.baml
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Presentation\obj\Debug\ListContratos.baml
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Presentation\obj\Debug\MainWindow.baml
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Presentation\obj\Debug\OnBreak.Presentation.g.resources
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Presentation\obj\Debug\OnBreak.Presentation.Properties.Resources.resources
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Presentation\obj\Debug\OnBreak.Presentation.csproj.GenerateResource.cache
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Presentation\obj\Debug\OnBreak.Presentation.csproj.CoreCompileInputs.cache
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Presentation\obj\Debug\OnBreak.Presentation.csproj.CopyComplete
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Presentation\obj\Debug\OnBreak.Presentation.exe
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.Presentation\obj\Debug\OnBreak.Presentation.pdb
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.Presentation.exe.config
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.Presentation.exe
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.Presentation.pdb
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Presentation\bin\Debug\ControlzEx.dll
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Presentation\bin\Debug\EntityFramework.dll
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Presentation\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Presentation\bin\Debug\MahApps.Metro.dll
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.ViewModelCliente.dll
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Presentation\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.Bussines.dll
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.Data.dll
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.ViewModelCliente.pdb
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.ViewModelCliente.dll.config
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Presentation\bin\Debug\ControlzEx.pdb
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Presentation\bin\Debug\EntityFramework.xml
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Presentation\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Presentation\bin\Debug\MahApps.Metro.pdb
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Presentation\bin\Debug\MahApps.Metro.xml
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.Bussines.pdb
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.Bussines.dll.config
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.Data.pdb
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.Data.dll.config
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Presentation\obj\Debug\OnBreak.Presentation.csprojAssemblyReference.cache
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Presentation\obj\Debug\AdmiClientes.g.cs
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Presentation\obj\Debug\AdmiContrato.g.cs
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Presentation\obj\Debug\ListClientes.g.cs
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Presentation\obj\Debug\ListContratos.g.cs
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Presentation\obj\Debug\MainWindow.g.cs
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Presentation\obj\Debug\App.g.cs
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Presentation\obj\Debug\OnBreak.Presentation_MarkupCompile.cache
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Presentation\obj\Debug\OnBreak.Presentation_MarkupCompile.lref
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Presentation\obj\Debug\App.baml
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Presentation\obj\Debug\AdmiClientes.baml
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Presentation\obj\Debug\AdmiContrato.baml
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Presentation\obj\Debug\ListClientes.baml
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Presentation\obj\Debug\ListContratos.baml
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Presentation\obj\Debug\MainWindow.baml
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Presentation\obj\Debug\OnBreak.Presentation.g.resources
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Presentation\obj\Debug\OnBreak.Presentation.Properties.Resources.resources
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Presentation\obj\Debug\OnBreak.Presentation.csproj.GenerateResource.cache
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Presentation\obj\Debug\OnBreak.Presentation.csproj.CoreCompileInputs.cache
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Presentation\obj\Debug\OnBreak.Presentation.csproj.CopyComplete
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Presentation\obj\Debug\OnBreak.Presentation.exe
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.Presentation\obj\Debug\OnBreak.Presentation.pdb
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.Presentation.exe.config
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.Presentation.exe
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.Presentation.pdb
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Presentation\bin\Debug\ControlzEx.dll
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Presentation\bin\Debug\EntityFramework.dll
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Presentation\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Presentation\bin\Debug\MahApps.Metro.dll
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.ViewModelCliente.dll
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Presentation\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.Bussines.dll
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.Data.dll
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.ViewModelCliente.pdb
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.ViewModelCliente.dll.config
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Presentation\bin\Debug\ControlzEx.pdb
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Presentation\bin\Debug\EntityFramework.xml
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Presentation\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Presentation\bin\Debug\MahApps.Metro.pdb
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Presentation\bin\Debug\MahApps.Metro.xml
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.Bussines.pdb
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.Bussines.dll.config
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.Data.pdb
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Presentation\bin\Debug\OnBreak.Data.dll.config
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Presentation\obj\Debug\OnBreak.Presentation.csprojAssemblyReference.cache
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Presentation\obj\Debug\AdmiClientes.g.cs
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Presentation\obj\Debug\AdmiContrato.g.cs
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Presentation\obj\Debug\ListClientes.g.cs
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Presentation\obj\Debug\ListContratos.g.cs
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Presentation\obj\Debug\MainWindow.g.cs
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Presentation\obj\Debug\App.g.cs
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Presentation\obj\Debug\OnBreak.Presentation_MarkupCompile.cache
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Presentation\obj\Debug\OnBreak.Presentation_MarkupCompile.lref
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Presentation\obj\Debug\App.baml
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Presentation\obj\Debug\AdmiClientes.baml
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Presentation\obj\Debug\AdmiContrato.baml
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Presentation\obj\Debug\ListClientes.baml
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Presentation\obj\Debug\ListContratos.baml
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Presentation\obj\Debug\MainWindow.baml
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Presentation\obj\Debug\OnBreak.Presentation.g.resources
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Presentation\obj\Debug\OnBreak.Presentation.Properties.Resources.resources
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Presentation\obj\Debug\OnBreak.Presentation.csproj.GenerateResource.cache
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Presentation\obj\Debug\OnBreak.Presentation.csproj.CopyComplete
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Presentation\obj\Debug\OnBreak.Presentation.exe
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Presentation\obj\Debug\OnBreak.Presentation.pdb
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.Presentation\obj\Debug\OnBreak.Presentation.csproj.CoreCompileInputs.cache

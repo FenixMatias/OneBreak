@@ -1,0 +1,72 @@
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\OnBreak.ViewModelCliente.dll.config
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\OnBreak.ViewModelCliente.dll
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\OnBreak.ViewModelCliente.pdb
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\EntityFramework.dll
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\OnBreak.Bussines.dll
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\OnBreak.Data.dll
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\OnBreak.Bussines.pdb
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\OnBreak.Bussines.dll.config
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\EntityFramework.xml
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\OnBreak.Data.pdb
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\OnBreak.Data.dll.config
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.ViewModelCliente\obj\Debug\OnBreak.ViewModelCliente.csprojAssemblyReference.cache
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.ViewModelCliente\obj\Debug\OnBreak.ViewModelCliente.csproj.CoreCompileInputs.cache
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.ViewModelCliente\obj\Debug\OnBreak.ViewModelCliente.csproj.CopyComplete
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.ViewModelCliente\obj\Debug\OnBreak.ViewModelCliente.dll
+C:\Users\Matio_000\source\repos\OnBreak.System\OnBreak.ViewModelCliente\obj\Debug\OnBreak.ViewModelCliente.pdb
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\OnBreak.ViewModelCliente.dll.config
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\OnBreak.ViewModelCliente.dll
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\OnBreak.ViewModelCliente.pdb
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\EntityFramework.dll
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\OnBreak.Bussines.dll
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\OnBreak.Data.dll
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\OnBreak.Bussines.pdb
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\OnBreak.Bussines.dll.config
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\EntityFramework.xml
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\OnBreak.Data.pdb
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\OnBreak.Data.dll.config
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.ViewModelCliente\obj\Debug\OnBreak.ViewModelCliente.csprojAssemblyReference.cache
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.ViewModelCliente\obj\Debug\OnBreak.ViewModelCliente.csproj.CoreCompileInputs.cache
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.ViewModelCliente\obj\Debug\OnBreak.ViewModelCliente.csproj.CopyComplete
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.ViewModelCliente\obj\Debug\OnBreak.ViewModelCliente.dll
+C:\Users\Matio_000\Desktop\OnBreak.System\OnBreak.ViewModelCliente\obj\Debug\OnBreak.ViewModelCliente.pdb
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\OnBreak.ViewModelCliente.dll.config
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\OnBreak.ViewModelCliente.dll
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\OnBreak.ViewModelCliente.pdb
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\EntityFramework.dll
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\OnBreak.Bussines.dll
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\OnBreak.Data.dll
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\OnBreak.Bussines.pdb
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\OnBreak.Bussines.dll.config
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\EntityFramework.xml
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\OnBreak.Data.pdb
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\OnBreak.Data.dll.config
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.ViewModelCliente\obj\Debug\OnBreak.ViewModelCliente.csprojAssemblyReference.cache
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.ViewModelCliente\obj\Debug\OnBreak.ViewModelCliente.csproj.CoreCompileInputs.cache
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.ViewModelCliente\obj\Debug\OnBreak.ViewModelCliente.csproj.CopyComplete
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.ViewModelCliente\obj\Debug\OnBreak.ViewModelCliente.dll
+C:\Users\Ricardo Milos\Desktop\The real final break\OnBreak.System\OnBreak.ViewModelCliente\obj\Debug\OnBreak.ViewModelCliente.pdb
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\OnBreak.ViewModelCliente.dll.config
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\OnBreak.ViewModelCliente.dll
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\OnBreak.ViewModelCliente.pdb
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\EntityFramework.dll
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\OnBreak.Bussines.dll
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\OnBreak.Data.dll
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\OnBreak.Bussines.pdb
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\OnBreak.Bussines.dll.config
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\EntityFramework.xml
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\OnBreak.Data.pdb
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.ViewModelCliente\bin\Debug\OnBreak.Data.dll.config
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.ViewModelCliente\obj\Debug\OnBreak.ViewModelCliente.csprojAssemblyReference.cache
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.ViewModelCliente\obj\Debug\OnBreak.ViewModelCliente.csproj.CopyComplete
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.ViewModelCliente\obj\Debug\OnBreak.ViewModelCliente.dll
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.ViewModelCliente\obj\Debug\OnBreak.ViewModelCliente.pdb
+C:\Users\Acer\Desktop\Ingeneria en Informatica\Desarrollo Software Escritorio y Gestion\Examen Transversal\OnBreak.System\OnBreak.ViewModelCliente\obj\Debug\OnBreak.ViewModelCliente.csproj.CoreCompileInputs.cache
